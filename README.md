@@ -36,7 +36,7 @@ The module takes the following variables as input:
   - **makestep**: An object containing remedial instructions if the clock of the vm is significantly out of sync at startup. It is an object containing two properties, **threshold** and **limit** (see: https://chrony.tuxfamily.org/doc/4.2/chrony.conf.html#makestep)
 - **install_dependencies**: Whether cloud-init should install external dependencies (should be set to false if you already provide an image with the external dependencies built-in). Defaults to true.
 - **release_version**: Vault release version to install. Defaults to 1.13.1.
-- **tls**: Optional tls configuration for secure communication with vault. It has the following keys:
+- **tls**: Tls configuration for secure communication with vault. It has the following keys:
   - **ca_certificate**: Ca certificate to authentify the server.
   - **server_certificate**: Tls certificate to authentify the server.
   - **server_key**: Tls private key to authentify the server.
