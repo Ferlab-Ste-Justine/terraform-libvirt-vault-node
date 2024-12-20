@@ -3,6 +3,11 @@ variable "name" {
   type        = string
 }
 
+variable "hostname" {
+  description = "The hostname used for Vault configuration (api_addr and cluster_addr)"
+  type        = string
+}
+
 variable "vcpus" {
   description = "Number of vcpus to assign to the vm"
   type        = number

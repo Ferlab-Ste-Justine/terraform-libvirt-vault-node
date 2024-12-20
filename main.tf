@@ -43,9 +43,9 @@ module "network_configs" {
 }
 
 module "vault_configs" {
-  source               = "git::https://github.com/Ferlab-Ste-Justine/terraform-cloudinit-templates.git//vault?ref=v0.8.0"
+  source               = "git::https://github.com/Ferlab-Ste-Justine/terraform-cloudinit-templates.git//vault?ref=v0.27.4"
   install_dependencies = var.install_dependencies
-  hostname             = var.name
+  hostname             = var.hostname 
   release_version      = var.release_version
   tls                  = var.tls
   etcd_backend         = var.etcd_backend
